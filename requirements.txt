@@ -1,0 +1,13 @@
+pandas==2.3.3
+numpy
+dask[dataframe]
+distributed
+pyarrow
+fastparquet
+scikit-learn
+lightgbm
+mlflow
+pyyaml
+python-dotenv
+pandera
+joblib
