@@ -24,6 +24,18 @@ The project demonstrates how to move from **raw transactional data → engineere
 
 ---
 
+## 📂 Data Source
+
+This project utilizes the **KKBox Churn Prediction Challenge** dataset, hosted by Kaggle.
+
+> **Note:** Due to competition rules and data usage policies, the raw dataset is not included in this repository.
+
+To reproduce the results, please download the data from the official competition page:
+* **Source:** [Kaggle: KKBox Churn Prediction Challenge] (https://www.kaggle.com/competitions/kkbox-churn-prediction-challenge/data)
+* **Required Files:** `train.csv`, `members.csv`, `transactions.csv`, `user_logs.csv`
+* **Setup:** Place the downloaded CSV files into the `data/raw/` directory before running the ingestion script.
+
+---
 ## 💼 Business Problem
 
 Subscription-based businesses heavily depend on retaining existing users. Even a small reduction in churn can significantly improve revenue and Customer Lifetime Value (CLV).
@@ -111,7 +123,7 @@ All experiments, parameters, metrics, and artifacts are automatically logged to 
 
 | Metric    | Score    | Business Interpretation            |
 | --------- | -------- | ---------------------------------- |
-| ROC-AUC   | **0.98** | Excellent ranking of at-risk users |
+| ROC-AUC   | **0.78** | Excellent ranking of at-risk users |
 | Precision | High     | Reduces false retention efforts    |
 
 ### Performance Diagnostics
@@ -232,13 +244,3 @@ kkbox_churn_project/
 
 ---
 
-## 👤 About This Project
-
-This project is intentionally designed to reflect **industry-grade machine learning systems**, rather than purely academic modeling.
-
-It emphasizes:
-- Scalable data engineering workflows
-- Clean, modular, and testable code structure
-- MLOps best practices such as experiment tracking and reproducibility
-
-If you're a recruiter or ML engineer reviewing this repository, the codebase is intentionally written to be **readable, extensible, and production-ready**.
